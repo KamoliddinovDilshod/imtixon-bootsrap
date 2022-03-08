@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./bootstarp/css/bootstrap.min.css">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="box mb-4 pt-3">
+        <a class="text-decoration-none text-secondary" href="#">
+          Cart
+        </a>
+        <a class="text-decoration-none text-secondary" href="#">
+          -Cutomer Information
+        </a>
+        <a class="text-decoration-none text-secondary" href="#">
+          -Shiping Method
+        </a>
+        <a class="text-decoration-none text-dark" href="#">
+          -Payment method
+        </a>
+      </div>
+    </div>
+  </header>
+  
+  <main>
+    <div class="container">
+      <div class="g-3 pb-4">
+        <h1 class="visually-hidden">
+          Payment
+        </h1>
+        <div class="d-flex justify-content-between g-3 mb-5">
+          <div class="col-8 shadow p-4">
+            <div class="container">
+              <h2 class="mb-3 ps-2">
+                Payment information
+              </h2>
+              <form class="form" action="https://echo.htmlacademy.ru/">
+                <label class="form-control border-0 mb-3">
+                  <p class="m-0">
+                    Card number
+                  </p>
+                  <input class="d-block form-control w-100" type="number" min="0" name="User card number">
+                </label>
+                <div class="d-flex">
+                  <label class="d-inline-block form-control w-50 col-6 border-0">
+                    <p class="m-0">
+                      Card holder
+                    </p>
+                    <input class="form-control" type="text" name="User Card holder" placeholder="Michael Jordan">
+                  </label>
+                  <label class="d-inline-block form-control w-25 col-3 border-0">
+                    <p class="m-0">
+                      Exp.Data
+                    </p>
+                    <input class="form-control" type="date" name="User Exp.Data">
+                  </label>
+                  <label class="d-inline-block form-control w-25 col-3 border-0">
+                    <p class="m-0">
+                      CVC
+                    </p>
+                    <input class="form-control" type="text" name="User CVC">
+                  </label>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-4 shadow w-25 h-100 p-4">
+            <div>
+              <button type="button" class="border-1 border-secondary position-relative p-2">
+                <img src="https://picsum.photos/30" alt="Template photo">
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
+                  2
+                  <span class="visually-hidden">unread messages</span>
+                </span>
+              </button>
+              <strong class="d-inline-block text-dark m-0 mx-3 me-5"> Chocolate bar</strong>
+              <span>$2.49</span>
+            </div>
+            <hr>
+            <div class="d-flex justify-content-between mb-2">
+              <span>
+                Subtotal
+              </span>
+              <span>
+                $4.98
+              </span>
+            </div>
+            <div class="d-flex justify-content-between">
+              <span>
+                Shipping
+              </span>
+              <span>
+                $3.00
+              </span>
+            </div>
+            <hr class="mb-3">
+            <div class="d-flex justify-content-between">
+              <span>
+                Total
+              </span>
+              <strong class="text-dark">
+                $7.98
+              </strong>
+            </div>
+          </div>
+        </div>
+        <div class="col-8 shadow mb-4 p-5">
+          <h2 class="h2 text-dark mb-5 ps-2">
+            Billing address
+          </h2>
+          <form class="form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="form-check-label form-control border-0 ">
+              <input class="form-check-input" type="radio" name="User check">
+              <strong> Same as the shipping address</strong>
+            </label>
+            <hr>
+            <label class="form-check-label form-control border-0">
+              <input class="form-check-input" type="radio" name="User check">
+              <strong>Use a different billing address</strong> 
+            </label>
+          </form>
+        </div>
+        <div class="d-flex justify-content-between align-items-center col-8">
+          <p class="text-primary">
+            Return to shipping method
+          </p>
+          <button class="text-white bg-primary border-0 rounded px-3 py-2" type="submit">
+            Complate order
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <script src="./bootstarp/js/bootstrap.js"></script>
+</body>
+</html>
